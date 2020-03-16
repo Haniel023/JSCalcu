@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+		<form name="form">
+		<div class="display">
+		<input type="text" placeholder="0" id="result" onkeypress="return isNumberKey(event)"/>
+		</div>
+		<div class="buttons">
+            <input type="button" class="add" name="add" value="+" onclick="dis('+')">
+            <input type="button" class="min" name="minus" value="-" onclick="dis('-')">
+            <input type="button" class="multi" name="times" value="*" onclick="dis('*')">
+            <input type="button" class="div" name="divide" value="/" onclick="dis('/')">
+            <br>
+            <input type="button" class="exp" name="expo" value="^2" onclick="dis('**2')">
+            <input type="button" class="mod" name="modulo" value="%" onclick="dis('%')">
+            <input type="button" class="eq" name="equal" value="=" onclick="solve()">
+            <input type="button" class="delete" name="clear" value="C" onclick="clr()">
+		</div>
+		</div>
+		
+		</form>
+	</div>
+</body>
+<script src="main.js"></script>
+</html>
